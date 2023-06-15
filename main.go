@@ -2,18 +2,17 @@ package main
 
 import (
 	"fmt"
-	_ "math"
+	"github.com/vk663434/pkg"
 )
-
-func boolOpposite(myboolen *bool) {
-   *myboolen =! *myboolen 
-  
-  
-}
-
+	
 func main(){
-  truth := true
-  boolOpposite(&truth)
-  fmt.Println(truth)
+  fmt.Println("calling function Getfloat")
+  fmt.Print("please enter number : ")
+  farhrenhit ,err := pkg.Getfloat()
+  if err != nil {
+    fmt.Println(err)
+  }
+  cilsius := (farhrenhit-32)*5/9
+  fmt.Printf("result is %.3f",cilsius)
   
 }
