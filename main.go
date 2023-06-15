@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/vk663434/pkg"
+	"github.com/vk663434/OppositeBool/pkg"
 )
 	
 func main(){
